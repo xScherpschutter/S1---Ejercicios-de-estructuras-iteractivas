@@ -1,0 +1,15 @@
+Algoritmo Ejercicio1
+	Definir n, contador, digitos Como Entero
+	Escribir "Ingrese un numero entero:"
+	Leer n
+    contador = 0 
+    digitos = n
+    
+	Mientras digitos <> 0 hacer 
+        cont = cont + 1 
+        digitos = trunc(digitos/10) 
+    FinMientras
+    
+	Escribir "El numero ingresado tiene ",cont," digitos"
+	
+FinAlgoritmo
