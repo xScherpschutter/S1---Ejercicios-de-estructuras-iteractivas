@@ -1,0 +1,18 @@
+Algoritmo Ejercicio3
+	Definir num, aux, contador como numerico
+	Escribir "Ingrese un número"
+	Leer num
+	contador = 0 
+	aux= 1
+	Mientras aux <= num Hacer
+		si num mod aux == 0
+			contador = contador + 1
+		FinSi
+		aux= aux + 1
+	Fin Mientras
+	si contador = 2 Entonces
+		Escribir "El número es primo"
+	SiNo
+		Escribir "El número no es primo"
+	FinSi
+FinAlgoritmo
