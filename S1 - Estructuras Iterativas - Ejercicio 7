@@ -1,0 +1,112 @@
+Algoritmo Ejercicio7
+	Definir total,num,edad, estatura, peso, x, acumEdad, acumPeso, acumPeso18_35 , acumEstatura, PromedioEdad, PromedioEstatura, PromedioPeso Como Entero
+	acumEdad= 0; acumEstatura= 0; acumPeso= 0; PromedioEdad= 0; PromedioEstatura= 0; PromedioPeso= 0
+	c= 0
+	d= 0
+	e= 0
+	x = 1
+	Escribir "Ingresa el total de encuestados"
+	leer total
+	
+	Mientras total <= 0 Hacer
+		Escribir "Ingrese un número mayor a cero."
+		leer total
+	Fin Mientras
+	
+	Mientras x <= total Hacer
+		
+		Escribir "Ingrese su edad:"
+		Leer edad
+		Mientras edad < 18 Hacer
+			Escribir "Ingrese una edad correcta o mayor a 18:"
+			Leer edad
+		Fin Mientras
+		
+		si edad >= 18 Entonces
+			acumEdad=acumEdad+edad
+			Si edad >= 18 y edad <= 25 Entonces
+				c=c+1
+			SiNo
+				si edad >= 36 Entonces
+					d=d+1
+				FinSi
+			FinSi
+		FinSi
+		
+		si edad >= 18 y edad <= 35 Entonces
+			
+			Escribir "Ingrese su peso en kilogramos:"
+			leer peso
+			
+			Mientras peso <= 0 Hacer
+				Escribir "Ingrese su peso en valores positivos:"
+				Leer peso
+			Fin Mientras
+			
+			si peso > 0 Entonces
+				acumPeso18_35=acumPeso18_35+peso
+				acumPeso=acumPeso+Peso
+				e=e+1
+			FinSi
+			
+				
+		SiNo
+				si edad >= 36 Entonces
+					
+					Escribir "Ingrese su peso en kilogramos:"
+					leer peso
+					
+					Mientras peso <= 0 Hacer
+						Escribir "Ingrese su peso en valores positivos:"
+						Leer peso
+					Fin Mientras
+					
+					si peso > 0 Entonces
+						acumPeso=acumPeso+Peso
+					FinSi
+					
+	
+				FinSi
+			
+			FinSi
+	
+		
+	    
+		
+		
+		Escribir "Ingrese su estatura en centimetros:"
+		leer estatura
+		Mientras estatura <= 0 Hacer
+			Escribir "Ingrese su estatura en valores positivos:"
+			Leer estatura
+		Fin Mientras
+		si estatura > 0 Entonces
+			acumEstatura=acumEstatura+estatura
+		FinSi
+		
+		x = x + 1
+	FinMientras
+	
+	// Promedio//
+	
+	PromedioEdad=trunc(acumEdad/total)
+	PromedioEstatura= trunc(acumEstatura/total)
+	PromedioPeso=trunc(acumPeso/total)
+	PromedioPeso18_35=trunc(acumPeso18_35/e)
+	
+	// Presentación de promedios / /
+	Escribir " "
+	Escribir  "El promedio de todas las edades ingresadas es de: ",PromedioEdad
+	Escribir " "
+	Escribir  "El promedio de todas las estaturas ingresadas es de: ",PromedioEstatura," cm"
+	Escribir " "
+	Escribir  "El promedio de todas las pesos ingresadas es de: ",PromedioPeso," kg"
+	Escribir " "
+	Escribir  "El promedio de peso entre las personas con edades de 18 a 35 años es de: ",PromedioPeso18_35," kg"
+	Escribir " "
+	Escribir " Hay un total de ",c," personas con edades entre 18 a 25 años"
+	Escribir " "
+	Escribir " Hay un total de ",d," personas con edades mayores a 36 años"
+	
+	
+FinAlgoritmo
