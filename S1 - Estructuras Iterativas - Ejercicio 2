@@ -2,7 +2,7 @@ Algoritmo Ejercicio2
 	Definir num, auxiliar, numinvertido como entero;
 	
 	
-Escribir "Ingrese numero a verificar si es capicua:";
+	Escribir "Ingrese numero a verificar si es capicua:";
 	Leer num;
 	
 	auxiliar = num
@@ -10,16 +10,12 @@ Escribir "Ingrese numero a verificar si es capicua:";
 	
 	Mientras auxiliar > 0 Hacer
 		numinvertido= numinvertido + auxiliar mod 10
-		Escribir "Secuencia uno de numero invertido:" numinvertido
 		numinvertido= numinvertido * 10
 		auxiliar = trunc(auxiliar/10)
-		Escribir "Secuencia dos de numero invertido:" numinvertido
-		Escribir "Secuencia auxiliar:" auxiliar
+		
 	Fin Mientras
 	
 	numinvertido=numinvertido/10
-	
-	Escribir "Numero invertido final: " numinvertido
 	
 	si num = numinvertido Entonces
 		Escribir "El número " num " es capicua"
