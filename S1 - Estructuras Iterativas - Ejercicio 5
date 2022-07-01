@@ -1,0 +1,22 @@
+Algoritmo Ejercicio5
+	definir contraseña Como Caracter
+	Escribir "Ingrese una contraseña:"
+	Leer contraseña
+	
+	tamaño=Longitud(contraseña)
+	
+	Mientras tamaño < 10 Hacer
+		
+		Escribir "Ingrese una contraseña con más de 10 caracteres:"
+		Leer contraseña
+		tamaño=Longitud(contraseña)
+	
+	Fin Mientras
+	
+	
+	
+	si tamaño > 10 Entonces
+		
+		Escribir "Contraseña correcta"
+		
+	FinSi
