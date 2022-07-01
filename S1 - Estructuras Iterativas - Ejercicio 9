@@ -1,0 +1,11 @@
+Algoritmo Ejercicio9
+	Definir d, x Como Entero
+	Escribir "Fichas de domino"
+	Escribir " "
+	para d = 0 Hasta 6 Con Paso 1 Hacer 
+		Para  n = 0 hasta d con paso 1 hacer
+			Escribir d," - ",n
+		FinPara
+		Escribir " "
+	FinPara	
+FinAlgoritmo
