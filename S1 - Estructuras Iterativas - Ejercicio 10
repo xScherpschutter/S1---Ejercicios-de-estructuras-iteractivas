@@ -1,0 +1,30 @@
+Algoritmo Ejercicio 10
+	Definir total, num, x, acumulado Como Entero
+	Definir promedio como numerico
+	x = 1; c = 0; acumulado = 0
+	Escribir "Ingrese la serie de números que va a ingresar:"
+	Leer total
+	
+	Mientras total <= 0 Hacer
+		Escribir "Ingrese valores mayores a 0 o números naturales positivos:"
+		Leer total
+	Fin Mientras
+	
+		
+		Mientras x <= total Hacer
+			
+			Escribir "Ingrese un número"
+			Leer num
+			si num = 0 Entonces
+				x=total
+			SiNo
+				acumulado= acumulado+num
+				c=c+1
+			FinSi
+			x=x+1
+			
+		Fin Mientras
+		
+		promedio= acumulado/c
+		
+		Escribir "El promedio de la serie de números es de: " promedio
