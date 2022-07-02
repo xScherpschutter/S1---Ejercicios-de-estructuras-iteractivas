@@ -1,3 +1,4 @@
+// Willian Alexander Macías Almeida //
 Algoritmo Ejercicio7
 	Definir total,num,edad, estatura, peso, x, acumEdad, acumPeso, acumPeso18_35 , acumEstatura, PromedioEdad, PromedioEstatura, PromedioPeso Como Entero
 	acumEdad= 0; acumEstatura= 0; acumPeso= 0; PromedioEdad= 0; PromedioEstatura= 0; PromedioPeso= 0
@@ -87,14 +88,15 @@ Algoritmo Ejercicio7
 		x = x + 1
 	FinMientras
 	
-	// Promedio//
+	// Promedio //
 	
 	PromedioEdad=trunc(acumEdad/total)
 	PromedioEstatura= trunc(acumEstatura/total)
 	PromedioPeso=trunc(acumPeso/total)
 	PromedioPeso18_35=trunc(acumPeso18_35/e)
 	
-	// Presentación de promedios / /
+	// Presentación de promedios //
+	
 	Escribir " "
 	Escribir  "El promedio de todas las edades ingresadas es de: ",PromedioEdad
 	Escribir " "
